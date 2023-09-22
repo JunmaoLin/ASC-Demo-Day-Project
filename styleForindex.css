@@ -1,0 +1,148 @@
+body{
+    margin:0;
+    background-image: url("http://donorbox.org/nonprofit-blog/wp-content/uploads/2018/02/how-to-get-donations.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+div{
+    border-style: none;
+}
+
+#logo{
+    height:175px;
+}
+
+.topDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(165, 255, 62);
+    height:150px;
+}
+#logoDiv{
+    /* width: 300px; */
+    border-style: none;
+}
+#companyName{
+    font-size: 300%;
+    text-shadow: 2px 2px rgb(74, 223, 81);
+    font-family: "Monaco";
+    text-align: center;
+}
+
+/* NavBar */
+#navigationBar{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 2px;
+
+    margin:20px;
+    padding:10px;
+    border-radius: 50px;
+    justify-content: flex-start;
+    
+}
+.navContainer{
+    background-color:rgb(199, 255, 255);
+    padding: 5px;
+    border-radius: 20px;
+    
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.navContainer:hover{
+    background-color:rgb(92, 255, 255);
+}
+.aTagForNavBar{
+    text-decoration: none;
+    color:black;
+}
+.aTagForNavBar:hover{
+    color:rgb(255, 115, 0);
+}
+
+
+.grid-container{
+    display:grid;
+    grid-gap: 80px;
+    grid-template-columns: auto auto auto;
+    padding:30px;
+    justify-content: center;
+}
+.grid-item{
+    width: 250px;
+    height:350px;
+    border-radius: 10px;
+    background-color: white;
+    padding:10px;
+    border-style: solid;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    box-shadow: 0px 0px 40px 5px;
+}
+
+.girdTitle{
+    font-size: 150%;
+    text-decoration: underline;
+    text-align: center;
+}
+.gridImg{
+    width: 225px;
+    height: 125px;
+}
+.gridP{
+    font-size: 80%;
+    overflow-y: scroll;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(150, 150, 150); 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #504f4f; 
+}
+
+.girdA{
+    text-decoration: none;
+    color:blue;
+}
+.girdA:hover{
+    text-decoration: underline;
+    color:rgb(1, 1, 78);
+}
+
+
+@media(max-width:1000px){
+    .grid-container{
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media(max-width:650px){
+    .grid-container{
+        grid-template-columns: auto;
+    }
+
+}
+

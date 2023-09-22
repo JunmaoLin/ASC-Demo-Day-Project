@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAcG6In1i5QTdLyJ158eujJKI4C-ynyofk",
+            authDomain: "messgefirebase.firebaseapp.com",
+            projectId: "messgefirebase",
+            storageBucket: "messgefirebase.appspot.com",
+            messagingSenderId: "929344365891",
+            appId: "1:929344365891:web:04e582f1b7c9308c067bf6",
+            measurementId: "G-14P48887V0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    
+    <script src="scriptForForm.js" defer></script>
+    <link rel="stylesheet" href="styleForForm.css">
+    <title>Form Page</title>
+</head>
+<body>
+    <div id ="navigationBar">
+        <div class = "navContainer"><a class = "aTagForNavBar" href = "index.html">Home</a></div>
+        <div class = "navContainer"><a class = "aTagForNavBar" href = "form.html">Form Page</a></div>
+    </div>
+
+    <div class="formContainer">
+        <form id = "form">
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="organizationName">Organization Name:</label><br>
+                    <input class="singleLineInput" id="organizationName" type="text" placeholder="e.g. Apple">
+                </div>
+                <div class="singleInput">
+                    <label for="imageAddress">Image Address:</label><br>
+                    <input class="singleLineInput" id="imageAddress" type="text" placeholder= "e.g. https://picsum.photos/536/354  An Image Address for display... ">
+                </div>
+                <div class="singleInput">
+                    <label for="urlToHomePage">URL To Organization's Home Page:</label><br>
+                    <input class="singleLineInput" id="urlToHomePage" type="text" placeholder="e.g. https://www.apple.com/">
+                </div>
+                <div class="singleInput">
+                    <label for="description">Description:</label><br>
+                    <textarea class="multiLineInput" id="description" name="description" placeholder="Write something about your company and what you do.."></textarea>
+                </div>
+                
+            </div>
+            <button type = "button"id="submitButton">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

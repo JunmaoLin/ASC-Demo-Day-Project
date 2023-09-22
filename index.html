@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAcG6In1i5QTdLyJ158eujJKI4C-ynyofk",
+            authDomain: "messgefirebase.firebaseapp.com",
+            projectId: "messgefirebase",
+            storageBucket: "messgefirebase.appspot.com",
+            messagingSenderId: "929344365891",
+            appId: "1:929344365891:web:04e582f1b7c9308c067bf6",
+            measurementId: "G-14P48887V0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    
+    <script src="scriptForindex.js" defer></script>
+    <link rel="stylesheet" href="styleForindex.css">
+    <title>Main Page</title>
+</head>
+<body>
+    <div class = "topDiv">
+        <div id = "logoDiv">
+            <img id = "logo"src = "images/Logo.png">
+        </div>
+    </div>
+    
+    <div id ="navigationBar">
+        <div class = "navContainer"><a class = "aTagForNavBar" href = "index.html">Home</a></div>
+        <div class = "navContainer"><a class = "aTagForNavBar" href = "form.html">Form Page</a></div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item" id = "d1">
+            <h1 class = "girdTitle">STOP THE LINE 3 PIPELINE</h1>
+            <img id = "img1"class = "gridImg" src = "images/image1.PNG">
+            <p class = "gridP">"Line 3 is a proposed pipeline expansion to bring nearly a million barrels of tar sands per day from Alberta, Canada to Superior, Wisconsin. Line 3 will cause oil spills and is being built through treaty land on top of the already massivve impact on climate change it will have."</p>
+            <a class = "girdA"href = "https://www.stopline3.org/#intro" target="_blank">Click Here To Learn More</a>
+        </div>
+        <div class="grid-item" id = "d2">
+            <h1 class = "girdTitle">PALESTINIAN REFUGEES</h1>
+            <img class = "gridImg" src = "images/image2.PNG">
+            <p class = "gridP">"Hostilities in recent days have caused the loss of human life and the destruction of physical infrastructure. Already high levels of psychosocial stress, especially among children, have been further exacerbated. As the need grows, we need your help more than ever."</p>
+            <a class = "girdA"href = "https://donate.unrwa.org/-landing-page/en_EN" target="_blank">Click Here To Learn More</a>
+        </div>
+        <div class="grid-item" id = "d3">
+            <h1 class = "girdTitle">BLACK LIVES MATTER</h1>
+            <img class = "gridImg" src = "images/image3.PNG">
+            <p class = "gridP">"Black Lives Matter Global Network Foundation, Inc. is a global organization in the US, UK, and Canada, whose mission is to eradicate white supremacy and build local power to intervene in violence inflicted on Black communities by the state and vigilantes."</p>
+            <a class = "girdA"href = "https://blacklivesmatter.com/" target="_blank">Click Here To Learn More</a>
+        </div>
+        <div class="grid-item" id = "d4">
+            <h1 class = "girdTitle">COVID RELIEF IN INDIA</h1>
+            <img class = "gridImg" src = "images/image4.PNG">
+            <p class = "gridP">India has been hard hit by Covid 19 and is in a deficit of ventilator and healthcare workers as well as vaccine availability.</p>
+            <a class = "girdA"href = "https://www.careindia.org/campaign-template/save-saviours-covid-19-wave/?utm_source=google-search&utm_medium=cpc&utm_campaign=Covid-19&gclid=CjwKCAjwmeiIBhA6EiwA-uaeFSIDkqlJhXTkqQVDY0ugPCMuC_VG9ZGAPIfg9TER8_0w0qPypMwxIRoC5XcQAvD_BwE" target="_blank">Click Here To Learn More</a>
+        </div>
+        <div class="grid-item" id = "d5">
+            <h1 class = "girdTitle">EARTHQUAKE IN HAITI</h1>
+            <img class = "gridImg" src = "https://media.npr.org/assets/img/2020/01/09/gilkey-haiti-0-19_custom-8b83129530c2e1dcbc28aab84a7f64b9f8ce00d4.jpg">
+            <p class = "gridP">Recently Haiti has been hit by an earthquake of 7.2 magnitude which devestated many homes and left the people of Haiti injured and homeless. This is also recently after their president was assassinated and now Haiti needs help more than ever</p>
+            <a class = "girdA"href = "https://www.unicefusa.org/stories/major-earthquake-hits-haiti/38873" target="_blank">Click Here To Learn More</a>
+        </div>
+        <div class="grid-item" id = "d6">
+            <h1 class = "girdTitle">DEFORESTATION</h1>
+            <img class = "gridImg" src = "https://www.worldatlas.com/r/w1200/upload/6a/4b/49/shutterstock-1408605185.jpg">
+            <p class = "gridP">Tens of thousands of acres of rainforests are being destroyed every day, threatening endangered wildlife, rare plants, and local communities who depend on forests to survive.</p>
+            <a class = "girdA"href = "https://give.rainforest-alliance.org/give/291977/?gclid=CjwKCAjwmeiIBhA6EiwA-uaeFY3d_0YK6h8vMqswSagRGRnBk3IcMHxhKcdS9-lObrF0rzSu0b0wyxoCyeAQAvD_BwE#!/donation/checkout?utm_source=21vvmmembga&utm_medium=cpc&utm_campaign=cy21memb&c_src=MDK21VX&c_src2=21vvmmembga" target="_blank">Click Here To Learn More</a>
+        </div>
+        <div class="grid-item" id = "d7">
+            <h1 class = "girdTitle">AFGHANISTAN</h1>
+            <img class = "gridImg" src = "https://pyxis.nymag.com/v1/imgs/21b/084/58b788253fc31e270792e57c3f0218c7e8-afghanistan.rsquare.w700.jpg">
+            <p class = "gridP">After the U.S. withdrew its troops in 2021 the Afghan government and the Taliban have been fighting and many people are desperately trying to rush out of the country some even dying while trying. The conflicts between the Taliban and the Afghan government have been intensifying and civilians are getting hurt.</p>
+            <a class = "girdA"href = "https://childrenwithoutborders.ca/" target="_blank">Click Here To Learn More</a>
+        </div>
+        <!-- <div class="grid-item" id = "d8">
+            <h1 class = "girdTitle">Title</h1>
+            <img class = "gridImg" src = "">
+            <p class = "gridP"></p>
+            <a class = "girdA"href = "" target="_blank">Click Here To Learn More</a>
+        </div>
+        <div class="grid-item" id = "d9">
+            <h1 class = "girdTitle">Title</h1>
+            <img class = "gridImg" src = "">
+            <p class = "gridP"></p>
+            <a class = "girdA"href = "" target="_blank">Click Here To Learn More</a> -->
+        <!-- </div> -->
+    </div>
+    
+</body>
+</html>
